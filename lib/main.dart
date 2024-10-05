@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_mobx/flutter_mobx.dart';
-import 'package:pomodoro/store/contador.store.dart';
+import 'package:pomodoro/pages/pomodoro.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,11 +15,13 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const HomePage(),
+      home: const Pomodoro(),
     );
   }
 }
 
+/*import 'package:flutter_mobx/flutter_mobx.dart';
+import 'package:pomodoro/store/contador.store.dart';
 final store = ContadorStore();
 
 class HomePage extends StatelessWidget {
@@ -54,4 +55,4 @@ class HomePage extends StatelessWidget {
       ),
     );
   }
-}
+}*/
