@@ -10,8 +10,19 @@ class Pomodoro extends StatelessWidget {
       body: Column(
         children: [
           Text('Pomodoro'),
-          Entradatempo(titulo: 'Trabalho', valor: 25),
-          Entradatempo(titulo: 'Descanso', valor: 5),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            children: [
+              Entradatempo(
+                titulo: 'Trabalho',
+                valor: 25,
+              ),
+              Entradatempo(
+                titulo: 'Descanso',
+                valor: 5,
+              ),
+            ],
+          ),
         ],
       ),
     );
