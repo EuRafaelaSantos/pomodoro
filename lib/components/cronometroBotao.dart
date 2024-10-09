@@ -3,11 +3,13 @@ import 'package:flutter/material.dart';
 class Cronometrobotao extends StatelessWidget {
   final String texto;
   final IconData icone;
+  final void Function()? click;
 
   Cronometrobotao({
     super.key,
     required this.texto,
     required this.icone,
+    this.click,
   });
 
   @override
@@ -22,7 +24,7 @@ class Cronometrobotao extends StatelessWidget {
           textStyle: TextStyle(
             fontSize: 25,
           )),
-      onPressed: () {},
+      onPressed: click,
       child: Row(
         children: [
           Padding(

@@ -44,7 +44,7 @@ class Entradatempo extends StatelessWidget {
               ),
             ),
             Text(
-              '${this.valor}',
+              '${this.valor} min',
               style: TextStyle(
                 fontSize: 18,
               ),
