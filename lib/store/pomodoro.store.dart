@@ -11,12 +11,12 @@ abstract class _PomodoroStore with Store {
   @observable
   bool iniciado = false;
   @observable
-  int minutos = 2;
+  int minutos = 1;
 
   @observable
   int segundos = 0;
   @observable
-  int tempoTrabalho = 2;
+  int tempoTrabalho = 1;
 
   @observable
   int tempoDescanso = 1;

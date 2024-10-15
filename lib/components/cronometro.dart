@@ -34,7 +34,7 @@ class Cronometro extends StatelessWidget {
               children: [
                 if (!store.iniciado)
                   Padding(
-                    padding: const EdgeInsets.only(right: 10),
+                    padding: const EdgeInsets.only(right: 5),
                     child: Cronometrobotao(
                       texto: 'Iniciar',
                       icone: Icons.play_arrow,
@@ -43,7 +43,7 @@ class Cronometro extends StatelessWidget {
                   ),
                 if (store.iniciado)
                   Padding(
-                    padding: const EdgeInsets.only(right: 10),
+                    padding: const EdgeInsets.only(right: 5),
                     child: Cronometrobotao(
                       texto: 'Parar',
                       icone: Icons.stop,
@@ -51,7 +51,7 @@ class Cronometro extends StatelessWidget {
                     ),
                   ),
                 Padding(
-                  padding: const EdgeInsets.only(right: 10),
+                  padding: const EdgeInsets.only(right: 5),
                   child: Cronometrobotao(
                     texto: 'Reiniciar',
                     icone: Icons.refresh,
